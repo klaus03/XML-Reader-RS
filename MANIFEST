@@ -1,0 +1,13 @@
+Changes
+MANIFEST
+LICENCE
+Makefile.PL
+Build.PL
+README
+lib/XML/Reader/RS.pm
+t/0010_test_Module.t
+t/0020_test_Module.t
+t/0030_test_Module.t
+t/0044_test_RS.t
+META.yml
+META.json

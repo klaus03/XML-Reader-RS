@@ -1,0 +1,69 @@
+XML-Reader-RS Version 0.01
+
+XML::Reader::RS - Importing XML::Reader using XML::Parser
+
+SYNOPSIS
+
+  XML::Reader:RS provides all the functionalities of XML::Reader using the parser
+  XML::Parser.
+
+    use XML::Reader::RS;
+
+    my $text = q{<init>n <?test pi?> t<page node="400">m <!-- remark --> r</page></init>};
+
+    my $rdr = XML::Reader::RS->new(\$text);
+    while ($rdr->iterate) {
+        printf "Path: %-19s, Value: %s\n", $rdr->path, $rdr->value;
+    }
+
+  This program produces the following output:
+
+    Path: /init              , Value: n t
+    Path: /init/page/@node   , Value: 400
+    Path: /init/page         , Value: m r
+    Path: /init              , Value:
+
+  To find out more about the different functionalities, please have a look at the documentation
+  for XML::Reader.
+
+INSTALLATION
+
+    To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+    After installing, you can find documentation for this module with the
+    perldoc command.
+
+    perldoc XML::Reader::RS
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=XML-Reader-RS
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/XML-Reader-RS
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/XML-Reader-RS
+
+    Search CPAN
+        http://search.cpan.org/dist/XML-Reader-RS
+
+AUTHOR
+
+    Klaus Eichner <klaus03@gmail.com>
+
+COPYRIGHT AND LICENSE
+
+    Copyright (C) 2012 by Klaus Eichner
+
+    All rights reserved. This program is free software; you can redistribute
+    it and/or modify it under the terms of the artistic license 2.0,
+    see http://www.opensource.org/licenses/artistic-license-2.0.php
