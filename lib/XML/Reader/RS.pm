@@ -1,26 +1,21 @@
+package XML::Reader::RS;
+
 use 5.014;
 
 use strict;
 use warnings;
 
-use XML::Reader qw(XML::Parser);
-
-package XML::Reader::RS;
+use XML::Reader 0.48 qw(XML::Parser slurp_xml);
 
 require Exporter;
 our @ISA       = qw(Exporter);
 our @EXPORT    = qw();
 our @EXPORT_OK = qw(slurp_xml);
-our $VERSION   = '0.01';
-
-*slurp_xml = \&XML::Reader::slurp_xml;
+our $VERSION   = '0.02';
 
 sub new {
     my $class = shift;
-
-    my $self = XML::Reader->new(@_);
-
-    $self;
+    XML::Reader->new(@_);
 }
 
 1;
@@ -33,7 +28,7 @@ XML::Reader::RS - Importing XML::Reader using XML::Parser
 
 =head1 SYNOPSIS
 
-XML::Reader:RS provides all the functionalities of XML::Reader using the parser
+XML::Reader::RS provides all the functionalities of XML::Reader using the parser
 XML::Parser.
 
   use XML::Reader::RS;

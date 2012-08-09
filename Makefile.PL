@@ -6,7 +6,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME              => 'XML::Reader::RS',
     VERSION_FROM      => 'lib/XML/Reader/RS.pm', # finds $VERSION
-    PREREQ_PM         => { 'XML::Reader' => 0.47, 'XML::Parser' => 0 }, # e.g., Module::Name => 1.1
+    PREREQ_PM         => { 'XML::Reader' => 0.48, 'XML::Parser' => 0 }, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/XML/Reader/RS.pm', # retrieve abstract from module
        AUTHOR         => 'Klaus Eichner <klaus03@gmail.com>') : ()),

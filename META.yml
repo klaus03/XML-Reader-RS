@@ -15,10 +15,10 @@ name: XML-Reader-RS
 provides:
   XML::Reader::RS:
     file: lib/XML/Reader/RS.pm
-    version: 0.01
+    version: 0.02
 requires:
   XML::Parser: 0
-  XML::Reader: 0.47
+  XML::Reader: 0.48
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02
