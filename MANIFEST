@@ -1,8 +1,8 @@
+.gitignore
 Changes
 MANIFEST
 LICENCE
 Makefile.PL
-Build.PL
 README
 lib/XML/Reader/RS.pm
 t/0010_test_Module.t

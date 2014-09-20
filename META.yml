@@ -2,23 +2,24 @@
 abstract: 'Importing XML::Reader using XML::Parser'
 author:
   - 'Klaus Eichner <klaus03@gmail.com>'
-build_requires: {}
+build_requires:
+  ExtUtils::MakeMaker: '0'
 configure_requires:
-  Module::Build: 0.3
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 1
-generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630'
-license: perl
+generated_by: 'ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.141170'
+license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: XML-Reader-RS
-provides:
-  XML::Reader::RS:
-    file: lib/XML/Reader/RS.pm
-    version: 0.02
+no_index:
+  directory:
+    - t
+    - inc
 requires:
-  XML::Parser: 0
-  XML::Reader: 0.48
+  XML::Parser: '0'
+  XML::Reader: '0.48'
 resources:
-  license: http://dev.perl.org/licenses/
-version: 0.02
+  repository: https://github.com/klaus03/XML-Reader-RS.git
+version: '0.03'
