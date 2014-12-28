@@ -11,7 +11,6 @@ require Exporter;
 our @ISA       = qw(Exporter);
 our @EXPORT    = qw();
 our @EXPORT_OK = qw(slurp_xml);
-our $VERSION   = '0.03';
 
 sub new {
     my $class = shift;
